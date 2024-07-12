@@ -28,7 +28,7 @@ export function QrCodeComponents() {
 
   return (
     <>
-      <canvas id="qrcode">Ola mundo!</canvas>
+      <canvas id="qrcode"></canvas>
     </>
   );
 }
