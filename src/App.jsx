@@ -4,7 +4,12 @@ function App() {
 
   return (
     <>
-      <h1>Olá Mundo!</h1>
+      <section className='main-body'>
+        <div className='content'>
+          <h1>Olá Mundo!</h1>
+        </div>
+      </section>
+      
     </>
   )
 }
