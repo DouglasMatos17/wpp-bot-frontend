@@ -5,8 +5,9 @@ import QRCode from 'qrcode';
 export function QrCodeComponents() {
   async function fetchQRCode() {
     try {
-      const response = await fetch('https://whatsapp-bot-production-b594.up.railway.app/qr');
+      const response = await fetch('http://localhost:3050/qr');
       const qrCodeData = await response.text();
+      console.log(qrCodeData)
       const qrcodeElement = document.getElementById('qrcode');
       QRCode.toCanvas(qrcodeElement, qrCodeData, {
         width: 350,
